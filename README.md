@@ -71,11 +71,11 @@ Tabela 1. Sites para a compra dos componentes
 Antes de realizarmos a montagem da POC, utilizamos a ferramenta EasyEDA para elaborar o esquema elétrico do projeto (Figura 3). Foi utilizado um sensor de umidade do solo, devido a indisponibilidade do sensor de chuva, mas o princípio de funcionamento é o mesmo. Enfrentamos um problema com a válvula solenóide, que, além de apresentar uma vazão baixa, possui uma malha que dificulta a passagem de água, mas fizemos os testes dos componentes e todos estão funcionando corretamente. A Figura 4 mostra a POC construída.
 
 
-![Figura 3. Esquema elétrico da POC.](/images/fig2.PNG)
+![Figura 3. Esquema elétrico da POC.](/images/fig3.PNG)
 
 Figura 3. Esquema elétrico da POC.
 
-![Figura 4. Imagem da POC construída.](/images/fig3.PNG)
+![Figura 4. Imagem da POC construída.](/images/fig4.PNG)
 
 Figura 4. Imagem da POC construída
 
