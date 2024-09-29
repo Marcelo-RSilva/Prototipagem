@@ -12,7 +12,9 @@ Inicialmente a proposta é utilizar microcontroladores, sensores e atuadores par
 ## MOTIVAÇÃO
 Supondo que temos um Ginásio com 60 metros de comprimento e 40 metros de largura, assim totalizando uma área total de 2400 metros quadrados, como mostra a Figura 1. Se em uma hora chover uma chuva média de 10mm/h então a área poderá captar cerca de 24 metros cúbicos de água ou 24000 litros. E isto é apenas um ginásio fictício, a quantidade de água que pode ser captada em Campus reais é muito maior.
 
-![Figura 1. Área de um ginásio fictício](/assets/images/tux.png).
+![Figura 1. Área de um ginásio fictício.](/images/fig1.PNG)
+
+Figura 1. Área de um ginásio fictício
 
 ## REQUISITOS FUNCIONAIS
 - Verificação da ocorrência de chuvas;
@@ -28,7 +30,10 @@ Supondo que temos um Ginásio com 60 metros de comprimento e 40 metros de largur
 ## ARQUITETURA DO PROJETO
 A figura 2 mostra a arquitetura do sistema proposto envolvendo o Arduino Uno como controlador central, conectado a diversos componentes. O sistema realiza a leitura contínua da vazão de água, exibindo os dados no display LCD. Quando o sensor de chuva detecta precipitação e a cisterna não está cheia, o buzzer é acionado com alertas sonoros e a válvula solenóide abre a comporta, permitindo o fluxo de água. O sistema opera até que a cisterna esteja cheia; nesse momento, o buzzer soa novamente, a válvula é fechada, e o funcionamento é encerrado. Se parar de chover, o sistema fecha a comporta e atualiza o display, garantindo o controle automático do fluxo de água.
 
-![Figura 2.  Arquitetura do projeto proposto.](/assets/images/tux.png).
+![Figura 2.  Arquitetura do projeto proposto.](/images/fig2.PNG)
+
+Figura 2.  Arquitetura do projeto proposto.
+
 ## FUNCIONAMENTO DA POC
 A Prova de Conceito (PoC) é composta por um sistema automatizado que gerencia o fluxo de água em uma cisterna, integrando sensores e atuadores. Abaixo, descrevemos o funcionamento detalhado do sistema:
 
@@ -66,9 +71,14 @@ Tabela 1. Sites para a compra dos componentes
 Antes de realizarmos a montagem da POC, utilizamos a ferramenta EasyEDA para elaborar o esquema elétrico do projeto (Figura 3). Foi utilizado um sensor de umidade do solo, devido a indisponibilidade do sensor de chuva, mas o princípio de funcionamento é o mesmo. Enfrentamos um problema com a válvula solenóide, que, além de apresentar uma vazão baixa, possui uma malha que dificulta a passagem de água, mas fizemos os testes dos componentes e todos estão funcionando corretamente. A Figura 4 mostra a POC construída.
 
 
-![Figura 3. Esquema elétrico da POC](/assets/images/tux.png).
+![Figura 3. Esquema elétrico da POC.](/images/fig2.PNG)
 
-![Figura 4. Imagem da POC construída](/assets/images/tux.png).
+Figura 3. Esquema elétrico da POC.
+
+![Figura 4. Imagem da POC construída.](/images/fig3.PNG)
+
+Figura 4. Imagem da POC construída
+
 ## CONCLUSÕES
 Apesar dos pequenos desafios encontrados durante o desenvolvimento, como a baixa vazão da válvula solenóide, o sistema funcionou conforme esperado, cumprindo todas as funções propostas. A prova de conceito (PoC) mostrou a viabilidade do projeto, evidenciando a capacidade de automação e controle preciso do fluxo de água para enchimento da cisterna. O uso da ferramenta EasyEDA para o desenvolvimento do esquema elétrico foi fundamental para a organização do projeto, e os testes realizados garantiram o funcionamento adequado dos componentes. Como proposta para trabalhos futuros, pode ser feito o uso de transceptores wi-fi e bluetooth para fazer a conexão com a internet das coisas.
 
